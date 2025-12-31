@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rounds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Courses</a>
+  <a href="rounds.html">Rounds</a>
+  <a href="handicap.html">Handicap</a>
+</nav>
+
+<h1>Your Rounds</h1>
+
+<div id="totalRounds" style="font-size:60px;text-align:center;">0</div>
+<div id="yearRounds" style="text-align:center;">Rounds this year: 0</div>
+
+<h2>Add a Round</h2>
+
+<input id="course" placeholder="Course name"><br><br>
+<input id="location" placeholder="City, Country"><br><br>
+<input id="lat" placeholder="Latitude"><br><br>
+<input id="lng" placeholder="Longitude"><br><br>
+<input id="rating" type="number" min="1" max="10" placeholder="Rating 1-10"><br><br>
+<input id="score" type="number" placeholder="Score"><br><br>
+
+<button onclick="addRound()">+ Add Round</button>
+
+<script src="script.js"></script>
+<script>updateStats();</script>
+
+</body>
+</html>
