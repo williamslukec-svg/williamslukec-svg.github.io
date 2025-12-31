@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
+  <title>Scorecard Plus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
-  <h1>My site is live</h1>
-  <p>If you can see this, GitHub Pages is working.</p>
+
+<nav>
+  <a href="index.html">Courses</a>
+  <a href="rounds.html">Rounds</a>
+  <a href="handicap.html">Handicap</a>
+</nav>
+
+<h1>Scorecard Plus</h1>
+
+<div id="map" style="height:500px;"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+<script>loadMap();</script>
+
 </body>
 </html>
